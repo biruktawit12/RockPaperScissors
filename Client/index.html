@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS</title>
+</head>
+<body>
+    <div id="container">
+    <div class="rps-wrapper">
+        <ul id="events">
+        </ul>
+    </div>
+    <div class="playing">
+        <img src="..\rock-left.png" id="left" class="lefthand" >
+        <img src="..\rock-left.png" id="right" class="righthand" >
+        <h1 id="result"></h1>
+        <h1 id="score"></h1>
+        <button id="play-again">Play Again</button>
+    </div>
+    <button id="rock">&#128074</button>
+    <button id="paper">&#x270B</button>
+    <button id="scissors">&#9996</button>
+    </div>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script  src="client.js"></script>
+</body>
+</html>
